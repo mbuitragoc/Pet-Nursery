@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Dogtora Kathe - Guarderia</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Dogtora Kathe - Guarderia 🐾</a>
+      </div>
+    </nav>
+    <main class="container">
+      <h1 class="text-center">Dogtora Kathe</h1>
+      <h2>Guarderia</h2>
+      <h3>EN LA GUARDERIA:</h3>
+      <div id="guarderia" class="row m-3"></div>
+      <h3>Agregar o Retirar mascota</h3>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text">Nombre</span>
+        <input type="text" id="nombre" class="form-control field" />
+        <span class="input-group-text">Edad</span>
+        <input
+          type="number"
+          id="edad"
+          min="1"
+          class="form-control field"
+          value="1"
+        />
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text">Genero</span>
+        <select id="genero" class="form-select">
+          <option value="F">Hembra</option>
+          <option value="M">Macho</option>
+        </select>
+        <span class="input-group-text">Especie</span>
+        <select id="especie" class="form-select">
+          <option value="Perro">Perro</option>
+          <option value="Gato">Gato</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+
+      <div id="button_types" class="col-sm-12">
+        <a id="agregar" class="btn bg-success text-bg-danger">Ingresar</a>
+        <a id="eliminar" class="btn bg-danger text-bg-dark">Retirar</a>
+      </div>
+      <div id="mensaje"></div>
+    </main>
+    <script src="./js/mascotas.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="//cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
